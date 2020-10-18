@@ -389,9 +389,20 @@ a.button:hover {
 
 .navbar {
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
+  /* flex-direction: row; */
+  height: 3rem;
+  border-bottom: 1px solid black;
 }
-.portfolio {
+.portfolios {
   display: flex;
-  
+  justify-content: flex-end
+}
+
+.logo {
+  height: 2.7rem;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
