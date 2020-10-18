@@ -252,6 +252,25 @@ a.button:hover {
   position: relative;
 }
 /* operated here */
+
+          /* the other one? */
+/* .message {
+  position: relative;
+}
+.message .message:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #f0f0f0;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+} */
 .message.outgoing:after {
 	content: '';
 	position: absolute;
@@ -260,12 +279,13 @@ a.button:hover {
 	width: 0;
 	height: 0;
 	border: 9px solid transparent;
-	border-left-color: #babb14;
+	border-left-color: #a795ef;
 	border-right: 0;
 	border-bottom: 0;
 	margin-top: -4.5px;
 	margin-right: -9px;
 }
+
 
 
 
@@ -364,3 +384,14 @@ a.button:hover {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+/* completely new stuff */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+.portfolio {
+  display: flex;
+  
+}

@@ -51,7 +51,8 @@ controller.ready(() => {
 
 
     // load traditional developer-created local custom feature modules
-    controller.loadModules(__dirname + '/features');
+    controller.loadModules(__dirname + '/features'); 
+        ///separates all features for controller to hear
 
   
 
