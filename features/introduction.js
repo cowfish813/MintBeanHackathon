@@ -10,7 +10,8 @@ module.exports = function(controller) {
         console.log("WELCOME BACK")
         await intro(bot, message)
     }) 
-
+    //when sever detects something or someone has logged on
+            //welcome back finds existing users
 
     const intro = (bot, message) => {
         bot.reply(message, 
