@@ -1,4 +1,6 @@
 
+const data = require('./data/data.js')
+
 module.exports = function(controller) {
 
     controller.on('hello', async(bot, message) => {
@@ -10,29 +12,35 @@ module.exports = function(controller) {
         console.log("WELCOME BACK")
         await intro(bot, message)
     }) 
-    //when sever detects something or someone has logged on
-            //welcome back finds existing users
 
-    const intro = (bot, message) => {
-        bot.reply(message, 
-        {
-            text: 'Hi, I am Chat Bot. Who would you like to get to know today.',
-            quick_replies: [
-                {
-                    title: 'Eric',
-                    payload: 'eric',
-                },
-                {
-                    title: 'Nicholas',
-                    payload: 'nicholas',
-                }, 
-                {
-                    title: 'Try',
-                    payload: 'try',
-                }
+    const intro = async(bot, message) => {
+        await bot.reply(message, {type: "typing"});
+        setTimeout( async () => {
+            await bot.changeContext(message.reference);
+            await bot.reply(message, 'Hello I am Chat Bot.');
+            await bot.reply(message, {type: "typing"});
 
-            ]
-        });
+        }, 1000)
+        setTimeout( async () => {
+            await bot.changeContext(message.reference);
+            await bot.reply(message, `I was created by my creator ${data.firstName} ${data.lastName} to introduce him to you.`);
+            await bot.reply(message, {type: "typing"});
+        }, 2000)
+        setTimeout( async () => {
+            await bot.changeContext(message.reference);
+            await bot.reply(message, `He is open to work right now, and you can ask me any question about him here.`);
+            await bot.reply(message, {type: "typing"});
+        }, 3000)
+        setTimeout( async () => {
+            await bot.changeContext(message.reference);
+            await bot.reply(message, {
+                text: "What would you like to know about him more?",
+                quick_replies: data.topics
+            });
+
+        }, 4000)
+
     }
+
 
 }
