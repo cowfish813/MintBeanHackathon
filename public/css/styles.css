@@ -394,13 +394,31 @@ a.button:hover {
   height: 3rem;
   border-bottom: 1px solid black;
 }
-.portfolios {
-  display: flex;
-  justify-content: flex-end
+.logoContainer {
+  width: 50%;
 }
 
+.portfolios {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.portfolio {
+  margin: 1rem;
+}
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+.logoContainer {
+  height: 2.7rem;
+  left: 0;
+  top: 0;
+}
 .logo {
   height: 2.7rem;
+  left: 0;
+  top: 0;
 }
 
 .logo:hover {
