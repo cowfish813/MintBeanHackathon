@@ -1,3 +1,4 @@
+
 const data = require('./data/data.js')
 
 module.exports = function(controller) {
@@ -13,6 +14,9 @@ module.exports = function(controller) {
                 quick_replies: data.techs
             })
     })
+
+
+    
    
     
   
