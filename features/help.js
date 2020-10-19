@@ -9,7 +9,7 @@ module.exports = function(controller) {
 
     controller.hears(["help"], "message", async(bot, message) => {
         await bot.reply(message, {
-            text: `Need help? For help on topics type "topics`,
+            text: `Need help? For help on topics type "topics"`,
             quick_replies: data.topics
         });
     });
