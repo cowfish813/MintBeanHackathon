@@ -472,7 +472,7 @@ button {
  p{
   color: rgb(47, 61, 255); 
   /* font-family: "Courier"; */
-  font-size: 20px;
+  font-size: 1rem;
   margin: 10px 0 0 10px;
   /* white-space: nowrap; */
   overflow: hidden;
