@@ -1,6 +1,26 @@
+/* changes font stuff  */
+@font-face {
+font-family: 'Terminator Real NFI';
+font-style: normal;
+font-weight: normal;
+src: local('Terminator Real NFI'), url('terminator real nfi.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Terminator Real NFI';
+font-style: normal;
+font-weight: normal;
+src: local('Terminator Real NFI'), url('terminator real nfi.woff') format('woff');
+}
+/*  */
+
+
 /* shared botkit ui styles */
+
 * {
   box-sizing: border-box;
+  font-family: 'Terminator Real NFI';
 }
 
 body,
@@ -9,7 +29,7 @@ html {
   padding: 0;
   font-size: 18px;
   background-color: #FFF;
-  font-family: "helvetica", sans-serif;
+  font-family: 'Terminator Real NFI'
 }
 
 .wrapper {
@@ -120,6 +140,8 @@ a.button:hover {
 }
 
 /* chat client */
+
+
 #message_window {
   background: #FFFFFF;
   border-left: 1px solid #CCC;
@@ -131,7 +153,10 @@ a.button:hover {
   /*margin: 2rem auto;*/
   display: flex;
   flex-direction: column;
-  font-family: "helvetica", sans-serif;
+  font-family: 'Terminator Real NFI'
+}
+.disconnected .offline {
+    font-family: 'Terminator Real NFI'
 }
 #message_window .disconnected {
   background: #FFFFCC;
@@ -249,7 +274,49 @@ a.button:hover {
   float: right;
   background: #a795ef;
   color: white;
+  position: relative;
 }
+/* operated here */
+
+          /* the other one? */
+/* .message {
+  position: relative;
+}
+.message .message:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #f0f0f0;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+} */
+/* .message.outgoing:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 9px solid transparent;
+	border-left-color: #a795ef;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -4.5px;
+  margin-right: -9px;
+  color: green;
+} */
+
+
+
+
+/* operation ends */
+
 #message_window #message_replies {
   text-align: center;
   overflow-x: auto;
@@ -343,3 +410,75 @@ a.button:hover {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+/* completely new stuff */
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-direction: row; */
+  height: 3rem;
+  border-bottom: 1px solid black;
+}
+.logoContainer {
+  /* width: 50%; */
+}
+
+.portfolios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 50%; */
+}
+.portfolio {
+  margin: 1rem;
+  color: blue;
+}
+
+ul {
+  background-color: black;
+  opacity: .85;
+}
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+.logoContainer {
+  height: 2.7rem;
+  left: 0;
+  top: 0;
+}
+.logo {
+  height: 2.7rem;
+  left: 0;
+  top: 0;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.terminal {
+  background-color: black;
+  opacity: .85;
+}
+
+button {
+  font-size: .6rem;
+}
+
+
+/* p{
+  color: Pink; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+}  */
