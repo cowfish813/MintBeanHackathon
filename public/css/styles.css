@@ -1,6 +1,26 @@
+/* changes font stuff  */
+@font-face {
+font-family: 'Terminator Real NFI';
+font-style: normal;
+font-weight: normal;
+src: local('Terminator Real NFI'), url('terminator real nfi.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Terminator Real NFI';
+font-style: normal;
+font-weight: normal;
+src: local('Terminator Real NFI'), url('terminator real nfi.woff') format('woff');
+}
+/*  */
+
+
 /* shared botkit ui styles */
+
 * {
   box-sizing: border-box;
+  font-family: 'Terminator Real NFI';
 }
 
 body,
@@ -9,7 +29,7 @@ html {
   padding: 0;
   font-size: 18px;
   background-color: #FFF;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Terminator Real NFI'
 }
 
 .wrapper {
@@ -133,7 +153,10 @@ a.button:hover {
   /*margin: 2rem auto;*/
   display: flex;
   flex-direction: column;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Terminator Real NFI'
+}
+.disconnected .offline {
+    font-family: 'Terminator Real NFI'
 }
 #message_window .disconnected {
   background: #FFFFCC;
@@ -273,7 +296,7 @@ a.button:hover {
 	margin-top: -10px;
 	margin-left: -20px;
 } */
-.message.outgoing:after {
+/* .message.outgoing:after {
 	content: '';
 	position: absolute;
 	right: 0;
@@ -285,8 +308,9 @@ a.button:hover {
 	border-right: 0;
 	border-bottom: 0;
 	margin-top: -4.5px;
-	margin-right: -9px;
-}
+  margin-right: -9px;
+  color: green;
+} */
 
 
 
@@ -407,6 +431,12 @@ a.button:hover {
 }
 .portfolio {
   margin: 1rem;
+  color: blue;
+}
+
+ul {
+  background-color: black;
+  opacity: .85;
 }
 a {
   color: inherit; /* blue colors for links too */
@@ -425,4 +455,13 @@ a {
 
 .logo:hover {
   cursor: pointer;
+}
+
+.terminal {
+  background-color: black;
+  opacity: .85;
+}
+
+button {
+  font-size: .6rem;
 }
