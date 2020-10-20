@@ -462,7 +462,7 @@ a.button:hover {
 }
 
 /*# sourceMappingURL=styles.css.map */
-
+/* tag */
 /* completely new stuff */
 
 .navbar {
@@ -477,6 +477,9 @@ a.button:hover {
   height: 2rem;
   background: rgb(11,18,156);
   background: linear-gradient(90deg,#000080,#1084d0);
+  height: 3rem;
+  border-bottom: 1px solid black;
+  background-color: blue;
 }
 
 .navbar_left {
