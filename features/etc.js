@@ -11,7 +11,7 @@ module.exports = function(controller) {
         })
     })
 
-    controller.hears([greetings], "message", async(bot, message) => {
+    controller.hears(greetings, "message", async(bot, message) => {
         
         await bot.reply(message,{
             text: `Hello Human`,
@@ -25,11 +25,11 @@ module.exports = function(controller) {
     })
 }
 
-var commands = [ new RegExp(/\bhi\b/),
+var commands = [ 
     "quit", "exit", "human", "destroy"
 ]
 
-var greetings = [
+var greetings = [ new RegExp(/\bhi\b/),
     "hello", "nihao", "ni hao", "bonjour"
 ]
 

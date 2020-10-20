@@ -192,7 +192,7 @@ a.button:hover {
 #message_window .powered_by {
   flex-shrink: 0;
   text-align: center;
-  border-bottom: 1px solid #CCC;
+  /* border-bottom: 1px solid #CCC; */
   font-size: 14px;
   padding: 0.25rem;
   color: #666;
@@ -215,10 +215,8 @@ a.button:hover {
   margin: 0.25rem;
   clear: both;
 }
-#message_window footer {
-  border-top: 1px solid #CCC;
 
-}
+
 #message_window footer input[type=text] {
   flex-grow: 1;
   font-size: 1rem;
@@ -242,10 +240,10 @@ a.button:hover {
   width: 50px;
   border: 0;
   cursor: pointer;
-  color: black;
+  color: white;
   box-sizing: border-box;
-  border: none;
-
+  border: 3px solid rgb(255, 47, 47);
+  background-color: rgb(255, 47, 47);
   border-radius: 0;
   min-width: 75px;
   min-height: 23px;
@@ -254,6 +252,7 @@ a.button:hover {
 }
 
 #message_window footer button:active {
+  
   padding: 2px 11px 0 13px;
   box-shadow: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;
 }
@@ -397,8 +396,8 @@ a.button:hover {
 
 
 #message_window #message_replies a:hover {
-  background: #05ffac;
-  border-color: #05ffac;
+  background: #00b679;
+  border-color: #00b679;
   color: #FFF;
 }
 
@@ -471,7 +470,7 @@ a.button:hover {
   /* -webkit-font-smoothing: none; */
   font-size: 11px;
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
   color: white;
   /* flex-direction: row; */
@@ -481,6 +480,18 @@ a.button:hover {
   height: 3rem;
   border-bottom: 1px solid black;
   background-color: blue;
+}
+
+.navbar_left {
+  font-family: "Pixelated MS Sans Serif", Arial;
+  /* -webkit-font-smoothing: none; */
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 2rem;
+
 }
 
 .navbar_title {
@@ -535,21 +546,6 @@ button {
 }
 
 
- p{
-  color: rgb(47, 61, 255); 
-  /* font-family: "Courier"; */
-  font-size: 1rem;
-  margin: 10px 0 0 10px;
-  /* white-space: nowrap; */
-  overflow: hidden;
-  width: 30em;
- 
-}
-
-@keyframes type{ 
-  from { width: 0; } 
-}  */
-
 
 ::-webkit-scrollbar {
   width: 16px;
@@ -565,11 +561,49 @@ button {
   border-left: 1px solid grey;
 }
 
+#help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  background-color: silver;
+  min-height: 14px;
+  min-width: 16px;
 
 
-}  
+  color: black;
+  font-family: "Pixelated MS Sans Serif", Arial;
+  font-weight: 900;
+  -webkit-font-smoothing: none;
+  cursor: pointer;
+}
 
-.message {
-  background-color: black;
-  opacity: .85;
+
+#readme {
+  display: none;
+  background-color: white;
+  font-family: "Pixelated MS Sans Serif", Arial;
+  -webkit-font-smoothing: none;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 400px;
+  box-shadow: inset -1px -1px #ffffff, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+  border-style: ridge;
+}
+
+#readme_header {
+  padding-left: 10px;
+  font-family: "Pixelated MS Sans Serif", Arial;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: white;
+  height: 1rem;
+  background: rgb(11,18,156);
+  background: linear-gradient(90deg,#000080,#1084d0);
 }
