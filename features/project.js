@@ -32,7 +32,7 @@ module.exports = function(controller) {
         setTimeout( async () => {
             await bot.changeContext(message.reference);
             await bot.reply(message,{
-                text: "Technologies he used for this project are listed helow",
+                text: "Technologies he used for this project are listed below",
                 quick_replies: data.EricHood.tech
             })
         },3000);
@@ -56,7 +56,7 @@ module.exports = function(controller) {
         setTimeout( async () => {
             await bot.changeContext(message.reference);
             await bot.reply(message,{
-                text: "Technologies he used for this project are listed helow",
+                text: "Technologies he used for this project are listed below",
                 quick_replies: data.TypingFantasy.tech
             })
         },3000);

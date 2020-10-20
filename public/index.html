@@ -12,27 +12,37 @@
     </head>
     <body >
       <div class="wrapper">
-
+     
         <div id="message_window">
-            <div class="disconnected">
-                Connecting to SkyNet Uplink!
-            </div>
-            <div class="offline">
-                Offline! Reload to reconnect.
-            </div>
+          
             <!-- <div class="powered_by"> -->
             <div class="navbar">
-              <!-- Powered by <a href="https://botkit.ai" target="_blank" title="Building Blocks for Building Bots"><img src="/botkit_icon.png" width="15" height="15" alt="Botkit Logo" /> Botkit</a> -->
-              <a class="logoContainer" target="_blank" onClick="window.location.reload()" class="left">
-                <img class="logo" alt="Cyberdyne" src="https://raw.githubusercontent.com/cowfish813/MintBeanHackathon/main/assets/imgbin-skynet-logo-cyberdyne-systems-robot-cyberdyne-inc-robot-RZEp0BubCMLQNN6EK5eWwwz6M.png">
-              </a>
-              <p class="navbar_title">Skynet Terminal Uplink</p>
-              <!-- <div class="portfolios">
-                <a class="portfolio" href="https://www.ericho.net" target="_blank" >Eric</a>
-                <a class="portfolio" href="https://nick-cheung.com/" target="_blank" > Nick</a>
-                <a class="portfolio" href="https://trykhov.com/" target="_blank" >Try</a>
-              </div> -->
+              <div class="navbar_left">
+                <a class="logoContainer" target="_blank" onClick="window.location.reload()" class="left">
+                  <img class="logo" alt="Cyberdyne" src="https://raw.githubusercontent.com/cowfish813/MintBeanHackathon/main/assets/imgbin-skynet-logo-cyberdyne-systems-robot-cyberdyne-inc-robot-RZEp0BubCMLQNN6EK5eWwwz6M.png">
+                </a>
+                <p class="navbar_title">Skynet Terminal Uplink</p>
+              </div>
+              <div id="help">?</div>
+
             </div>
+
+            <div class="disconnected">
+              Connecting to SkyNet Uplink!
+          </div>
+          <div class="offline">
+              Offline! Reload to reconnect.
+          </div>
+           <div id="readme">
+              <div id="readme_header">
+                Readme
+              </div>
+              <div>
+
+              </div>
+
+           </div>
+
             <section class="terminal">
                 <div id="message_list">
                     <div id="message_template">
@@ -72,6 +82,9 @@
             </footer>
         </div>
         </div>
+        
         <script src="/client.js"></script>
+        <script src="/script.js"></script>
+
     </body>
 </html>
