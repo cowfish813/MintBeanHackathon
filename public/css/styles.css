@@ -27,15 +27,17 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  background-color: #FFF;
-  font-family: 'Terminator Real NFI'
+  font-size: 15px;
+ 
+  font-family: 'Terminator Real NFI';
+  background-color: black;
 }
 
 .wrapper {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
+  overflow-y: visible;
 }
 .wrapper:after {
   content: "";
@@ -61,7 +63,13 @@ html {
 
 footer {
   text-align: center;
+  background-color: black;
 }
+
+/* .commandLine {
+  background-color: black;
+  color: white;
+} */
 
 .hero {
   text-align: center;
@@ -131,7 +139,7 @@ a.button {
   padding: 0.5rem 2rem;
   text-align: center;
   text-decoration: none;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px rgba(155, 46, 46, 0.2);
   background-color: #FFF;
   transition: box-shadow 0.1s linear;
 }
@@ -144,8 +152,10 @@ a.button:hover {
 
 #message_window {
   background: #FFFFFF;
-  border-left: 1px solid #CCC;
-  border-right: 1px solid #CCC;
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+  border-style: ridge;
+  /* border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC; */
   /*height: 500px;
   width: 320px;*/
   height: 100%;
@@ -153,8 +163,10 @@ a.button:hover {
   /*margin: 2rem auto;*/
   display: flex;
   flex-direction: column;
-  font-family: 'Terminator Real NFI'
+  font-family: 'Terminator Real NFI';
+  
 }
+
 .disconnected .offline {
     font-family: 'Terminator Real NFI'
 }
@@ -180,7 +192,7 @@ a.button:hover {
 #message_window .powered_by {
   flex-shrink: 0;
   text-align: center;
-  border-bottom: 1px solid #CCC;
+  /* border-bottom: 1px solid #CCC; */
   font-size: 14px;
   padding: 0.25rem;
   color: #666;
@@ -197,51 +209,80 @@ a.button:hover {
   flex-grow: 1;
   flex-direction: column-reverse;
   display: flex;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 #message_window section div div {
   margin: 0.25rem;
   clear: both;
 }
-#message_window footer {
-  border-top: 1px solid #CCC;
-  padding: 0.25rem;
-}
+
+
 #message_window footer input[type=text] {
   flex-grow: 1;
-  font-size: 1.25rem;
+  font-size: 1rem;
   outline: none;
   border: none;
+  background-color: black;
+  font-family: "Pixelated MS Sans Serif", Arial;
+  -webkit-font-smoothing: none;
+  color: white;
 }
+
+
+
+
+
 #message_window footer button {
+  display: flex;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
   width: 50px;
-  background: none;
   border: 0;
   cursor: pointer;
-  color: blue;
-  font-weight: bold;
+  color: white;
+  box-sizing: border-box;
+  border: 3px solid rgb(255, 47, 47);
+  background-color: rgb(255, 47, 47);
+  border-radius: 0;
+  min-width: 75px;
+  min-height: 23px;
+  padding: 0 12px;
+  outline: none;
 }
+
+#message_window footer button:active {
+  
+  padding: 2px 11px 0 13px;
+  box-shadow: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;
+}
+
+
+
 #message_window form {
   display: flex;
   margin: 0;
-  padding: 0.25rem;
+ 
 }
 #message_window #message_template {
   display: none;
 }
-#message_window .message {
+#message_window .message{
   font-size: 14px;
   padding: 0.5rem;
-  background: #F0F0F0;
-  color: #333;
+  color: rgb(84, 228, 168);
   border-radius: 5px;
   width: auto;
   display: inline-block;
   max-width: 75%;
 }
+
+
+
+
 #message_window .file_attachment {
-  background: #F0F0F0;
-  color: #333;
+  background: black;
+  color: rgb(94, 77, 255);
   border-radius: 5px;
   display: inline-block;
   max-width: 75%;
@@ -272,7 +313,7 @@ a.button:hover {
 }
 #message_window .message.outgoing {
   float: right;
-  background: #a795ef;
+  background: black;
   color: white;
   position: relative;
 }
@@ -337,15 +378,26 @@ a.button:hover {
 #message_window #message_replies a {
   text-decoration: none;
   display: block;
-  border: 1px solid #a795ef;
-  color: #a795ef;
-  border-radius: 16px;
-  padding: 0.25rem 1rem;
+  border: 1px solid #5675fd;
+  color: #5675fd;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  min-width: 75px;
+  min-height: 23px;
+
+  
+
+  padding: 0.25rem 0.8rem;
   font-size: 14px;
   cursor: pointer;
 }
+
+
+
 #message_window #message_replies a:hover {
-  background: #a795ef;
+  background: #00b679;
+  border-color: #00b679;
   color: #FFF;
 }
 
@@ -360,7 +412,7 @@ a.button:hover {
   width: 5px;
   float: left;
   margin: 0 1px;
-  background-color: #333;
+  background-color: black;
   display: block;
   border-radius: 50%;
   opacity: 0.4;
@@ -414,16 +466,38 @@ a.button:hover {
 /* completely new stuff */
 
 .navbar {
+  font-family: "Pixelated MS Sans Serif", Arial;
+  /* -webkit-font-smoothing: none; */
+  font-size: 11px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
   /* flex-direction: row; */
+  height: 2rem;
+  background: rgb(11,18,156);
+  background: linear-gradient(90deg,#000080,#1084d0);
   height: 3rem;
   border-bottom: 1px solid black;
   background-color: blue;
 }
-.logoContainer {
-  /* width: 50%; */
+
+.navbar_left {
+  font-family: "Pixelated MS Sans Serif", Arial;
+  /* -webkit-font-smoothing: none; */
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 2rem;
+
 }
+
+.navbar_title {
+  margin-left: 10px;
+}
+
 
 .portfolios {
   display: flex;
@@ -438,19 +512,21 @@ a.button:hover {
 
 ul {
   background-color: black;
-  opacity: .85;
+  /* opacity: .85; */
 }
 a {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
 }
 .logoContainer {
-  height: 2.7rem;
+  /* height: 2.7rem; */
+  height: inherit;
+
   left: 0;
   top: 0;
 }
 .logo {
-  height: 2.7rem;
+  height: 100%;
   left: 0;
   top: 0;
 }
@@ -461,7 +537,8 @@ a {
 
 .terminal {
   background-color: black;
-  opacity: .85;
+  overflow-y: visible; 
+  /* opacity: .85; */
 }
 
 button {
@@ -469,22 +546,64 @@ button {
 }
 
 
- p{
-  color: rgb(47, 61, 255); 
-  /* font-family: "Courier"; */
-  font-size: 1rem;
-  margin: 10px 0 0 10px;
-  /* white-space: nowrap; */
-  overflow: hidden;
-  width: 30em;
-  animation: type 4s steps(60, end); 
+
+::-webkit-scrollbar {
+  width: 16px;
 }
 
-@keyframes type{ 
-  from { width: 0; } 
-}  
 
-.message {
-  background-color: black;
-  opacity: .85;
+::-webkit-scrollbar-track {
+  background-color: rgb(66, 66, 66);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(53, 53, 53);
+  border-left: 1px solid grey;
+}
+
+#help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  background-color: silver;
+  min-height: 14px;
+  min-width: 16px;
+
+
+  color: black;
+  font-family: "Pixelated MS Sans Serif", Arial;
+  font-weight: 900;
+  -webkit-font-smoothing: none;
+  cursor: pointer;
+}
+
+
+#readme {
+  display: none;
+  background-color: white;
+  font-family: "Pixelated MS Sans Serif", Arial;
+  -webkit-font-smoothing: none;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 400px;
+  box-shadow: inset -1px -1px #ffffff, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+  border-style: ridge;
+}
+
+#readme_header {
+  padding-left: 10px;
+  font-family: "Pixelated MS Sans Serif", Arial;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: white;
+  height: 1rem;
+  background: rgb(11,18,156);
+  background: linear-gradient(90deg,#000080,#1084d0);
 }
