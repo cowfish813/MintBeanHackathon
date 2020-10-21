@@ -580,11 +580,12 @@ button {
 
 
 #readme {
-  display: none;
+  /* TAG FOR ENABLE */
+  /* display: none; */
   background-color: white;
   font-family: "Pixelated MS Sans Serif", Arial;
   -webkit-font-smoothing: none;
-
+  z-index: 20;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -598,7 +599,8 @@ button {
 
 #readme_header {
   padding-left: 10px;
-  font-family: "Pixelated MS Sans Serif", Arial;
+  /* font-family: "Pixelated MS Sans Serif", Arial; */
+  font-family: 'Press Start 2P', cursive;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -607,3 +609,41 @@ button {
   background: rgb(11,18,156);
   background: linear-gradient(90deg,#000080,#1084d0);
 }
+
+.readmeContent {
+  font-family: 'Press Start 2P', cursive;
+}
+.readmeLi {
+  font-family: 'Press Start 2P', cursive;
+  margin: 1rem;
+}
+.signature {
+  margin-left: 12rem;
+  /* margin-top: 12rem; */
+}
+
+/* animation test */
+
+ p{
+  /* color: rgb(47, 61, 255);  */
+  /* font-family: "Courier"; */
+  font-size: .8rem;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 76em;
+  /* height: 5rem; */
+  animation: type 4s steps(60, end); 
+}
+
+@keyframes type{ 
+  from { width: 0; }
+  /* to { height: }  */
+} 
+  
+
+.message {
+  background-color: black;
+  opacity: .85;
+} 
+
