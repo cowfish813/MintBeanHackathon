@@ -58,10 +58,8 @@ module.exports = {
     },
     AppAcademy: {
         name: "AppAcademy",
-        desc: ``
-
+        desc: `From December 2019 to April 2020, Nicholas went to AppAcademy an intense Software Engineering bootmap located in San Francisco.`
     },
-
     techs: [
         {
             title: "JavaScript",
@@ -111,10 +109,7 @@ module.exports = {
             title: "MongoDB",
             payload: "MongoDB"
         },
-
-
     ],
-
     contacts: [
         {
             title: "Email",
@@ -139,28 +134,32 @@ module.exports = {
     ],
     jobs: [
         {
-            title: "Trimark",
-            payload: "Trimark"
+            title: "The North Face",
+            payload: "The North Face"
         },
         {
-            title: "Logisitics",
-            payload: "logisitics"
+            title: "Sales Supervisor",
+            payload: "Sales Supervisor"
         }
     ],
     projects: [
         {
-            title: "EricHood",
-            payload: "EricHood"
+            title: "SuperTramp",
+            payload: "SuperTramp"
         },
         {
-            title: "Typing Fantasy",
-            payload: "Typing Fantasy",
+            title: "SanFranciscoAQI",
+            payload: "SanFranciscoAQI",
+        },
+        {
+            title: "Food Harmony",
+            payload: "Food Harmony",
         }
     ],
-    EricHood: {
-        url: "<https://rhood.herokuapp.com/>",
-        desc: "A full stack clone of Robinhood's web application. It uses React and Redux on the front end, Recharts for chart visualization, Rails and PostgresQL on the backend",
-        keywords: ["Robinhood", "Robin", 'Erichood', 'full stack', 'full-stack'],
+    SuperTramp: {
+        url: "<https://supertrampapp.herokuapp.com/>",
+        desc: "Tribute to popular camping website HipCamp, where users explore various listings across many locations",
+        keywords: ["SuperTreamp", "HipCamp", 'full stack', 'full-stack'],
         tech: [{
             title: "Javascript",
             payload: "Javascript"
@@ -182,23 +181,49 @@ module.exports = {
             payload: "PostgreSQL"
         },
         {
-            title: "Recharts",
-            payload: "Recharts"
+            title: "airbnb/React-Dates",
+            payload: "airbnb/React-Dates"
         }
         ]
     },
-    TypingFantasy: {
-        url: "<https://trombed.github.io/typing_game/>",
-        desc: "An endless typing game written in vanilla JavaScript inspired by games such as Type Racer and Final Fantasy",
-        keywords: ["Typing", "Fantasy", 'game'],
+    SanFranciscoAQI: {
+        url: "<https://cowfish813.github.io/SF-AQI/>",
+        desc: "D3.js application that utilizes an external API to present real time air quality index and shows previous records of San Francisco's AQI",
+        keywords: ["AQI", "SF AQI", 'D3', "D3.js", "D3js", "widget"],
         tech: [{
             title: "Javascript",
             payload: "Javascript"
         },
         {
-            title: "Canvas",
-            payload: "Canvas"
+            title: "D3",
+            payload: "D3"
         }]
+    },
+    FoodHarmony: {
+        url: "<http://food-harmony-sf.herokuapp.com/>",
+        desc: "Tribute to popular camping website HipCamp, where users explore various listings across many locations",
+        keywords: ["FoodHarmony", "MERN", 'mern stack', 'MongoDB', "node.js", "express", "node", "react", "food", "hungry"],
+        tech: [{
+            title: "Javascript",
+            payload: "Javascript"
+        },
+        {
+            title: "MongoDB",
+            payload: "MongoDB"
+        },
+        {
+            title: "React",
+            payload: "React"
+        },
+        {
+            title: "Express",
+            payload: "Express"
+        },
+        {
+            title: "Node.js",
+            payload: "Node.js"
+        }
+        ]
     },
     jobs: [
         {
@@ -206,31 +231,20 @@ module.exports = {
             payload: "The North Face"
         },
         {
-            title: "Portlink",
-            payload: "Portlink"
+            title: "Monsanto via Aerotek Staffing Agency",
+            payload: "Monsanto via Aerotek Staffing Agency"
         },
-        {
-            title: "Yapstone",
-            payload: "Yapstone"
-        }
     ],
-    trimark: {
-        name: "Trimark - Billing Manager",
-        year: "2016-2019",
-        desc: "At Trimark Eric was the billing manager for the bay area's biggest restaurant equipment wholesaler. He led a team in multiple offices headquartered in Brisbane, California. He successfully merged departments to increase efficiency and helped the company in potential loss revenues cases",
-        keywords: ["trimark", "billing"]
+    TheNorthFace: {
+        name: "The North Face - Sales Supervisor",
+        year: "2012-2019",
+        desc: "Created flagship specific training checklist for new and current hires to adhere to and ",
+        keywords: ["The", "north", "face", "outdoors", "manager", "management", "sales", "customer", "service", "retail", "the north face", "tnf"]
     },
-    portlink: {
-        name: "Portlink - Export Specialist",
-        year: "2015-2016",
+    Monsanto: {
+        name: "Monsanto - Lab Associate",
+        year: "2010-2010",
         desc: "At Portlink Eric was the export specialist and he handled all daily routines relating to the export side of the business. He also was the middleman for all domestic issues for Portlink's oversea offices",
-        keywords: ["portlink", "export"]
-    },
-    yapstone: {
-        name: "Yapstone - Staff Accountant",
-        year: "2013-2015",
-        desc: "At Yapstone Eric was a staff accountant for the biggest online rental payment platform in the country. Beside his accounting duties, he was also working with the engineers to resolve their online payment systems issues.",
-        keywords: ["yapstone", "accountant", "accounting"]
+        keywords: ["science", "food", "gmo", "seeds", "quality", "testing"]
     }
-
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
