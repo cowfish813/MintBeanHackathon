@@ -584,7 +584,7 @@ button {
   background-color: white;
   font-family: "Pixelated MS Sans Serif", Arial;
   -webkit-font-smoothing: none;
-
+  z-index: 20;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -598,7 +598,8 @@ button {
 
 #readme_header {
   padding-left: 10px;
-  font-family: "Pixelated MS Sans Serif", Arial;
+  /* font-family: "Pixelated MS Sans Serif", Arial; */
+  font-family: 'Press Start 2P', cursive;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -607,6 +608,14 @@ button {
   background: rgb(11,18,156);
   background: linear-gradient(90deg,#000080,#1084d0);
 }
+
+.readmeContent {
+  font-family: 'Press Start 2P', cursive;
+}
+li {
+  font-family: 'Press Start 2P', cursive;
+}
+
 /* animation test */
 
  p{
@@ -631,3 +640,4 @@ button {
   background-color: black;
   opacity: .85;
 } 
+

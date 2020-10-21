@@ -17,13 +17,13 @@ module.exports = function(controller) {
         await bot.reply(message, {type: "typing"});
         setTimeout( async () => {
             await bot.changeContext(message.reference);
-            await bot.reply(message, 'Hello I am Chat Bot.');
+            await bot.reply(message, 'Hello I am the T-790.');
             await bot.reply(message, {type: "typing"});
 
         }, 1000)
         setTimeout( async () => {
             await bot.changeContext(message.reference);
-            await bot.reply(message, `I was created by my creator ${data.firstName} ${data.lastName} to introduce him to you.`);
+            await bot.reply(message, `I was created by ${data.firstName} ${data.lastName} to introduce him to you.`);
             await bot.reply(message, {type: "typing"});
         }, 2000)
         setTimeout( async () => {
