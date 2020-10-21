@@ -607,3 +607,27 @@ button {
   background: rgb(11,18,156);
   background: linear-gradient(90deg,#000080,#1084d0);
 }
+/* animation test */
+
+ p{
+  /* color: rgb(47, 61, 255);  */
+  /* font-family: "Courier"; */
+  font-size: .8rem;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 76em;
+  /* height: 5rem; */
+  animation: type 4s steps(60, end); 
+}
+
+@keyframes type{ 
+  from { width: 0; }
+  /* to { height: }  */
+} 
+  
+
+.message {
+  background-color: black;
+  opacity: .85;
+} 
