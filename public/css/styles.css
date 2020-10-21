@@ -580,7 +580,8 @@ button {
 
 
 #readme {
-  display: none;
+  /* TAG FOR ENABLE */
+  /* display: none; */
   background-color: white;
   font-family: "Pixelated MS Sans Serif", Arial;
   -webkit-font-smoothing: none;
@@ -612,8 +613,13 @@ button {
 .readmeContent {
   font-family: 'Press Start 2P', cursive;
 }
-li {
+.readmeLi {
   font-family: 'Press Start 2P', cursive;
+  margin: 1rem;
+}
+.signature {
+  margin-left: 12rem;
+  /* margin-top: 12rem; */
 }
 
 /* animation test */
