@@ -6,7 +6,7 @@ module.exports = function(controller) {
     controller.on('hello', async(bot, message) => {
         console.log("WELCOME")
         await intro(bot, message)
-    }) 
+    }) //async takes a second before it types out response
 
     controller.on('welcome_back', async(bot, message) => {
         console.log("WELCOME BACK")
