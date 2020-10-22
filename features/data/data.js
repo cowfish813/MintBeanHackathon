@@ -57,7 +57,7 @@ module.exports = {
     },
     AppAcademy: {
         name: "AppAcademy",
-        desc: `From December 2019 to April 2020, Nicholas went to AppAcademy an intense Software Engineering bootmap located in San Francisco.`
+        desc: `December 2019 to April 2020, Nicholas went to AppAcademy an intense Software Engineering bootmap in SF`
     },
 
     techs: [
