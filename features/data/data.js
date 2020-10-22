@@ -1,14 +1,14 @@
 module.exports = {
-    firstName: "Eric",
-    lastName: "Ho",
-    email: "<eric.h924@gmail.com>",
-    phone: "(415) 734-6108",
-    github: "<https://github.com/Trombed>",
-    linkedin: "<https://www.linkedin.com/in/eric-ho-9377b21a4/>",
-    portfolio: "<https://www.ericho.net>",
-    resume: "https://www.ericho.net/assets/resume.pdf",
-    interest: "likes to read manga, watch basketball from his favorite team Golden State Warriors, and find new technologies to sharpen his skills.",
-    yourself: "Eric is an ex-accountant turned engineer, he loved making games and website when he was a kid. In 2019 he decided to finally realize his dream to become a software engineer.",
+    firstName: "Nicholas",
+    lastName: "Cheung",
+    email: "<Nkkcheung@gmail.com>",
+    phone: "(415) 347-5841",
+    github: "<https://github.com/cowfish813>",
+    linkedin: "<https://www.linkedin.com/in/nicholas-cheung-6a72999/>",
+    portfolio: "<https://nick-cheung.com/>",
+    resume: "https://nick-cheung.com/assets/Nicholas%20Cheung%20Sofware%20Engineer%20Resume.pdf",
+    interest: "Personal growth anywhere from Personal to Professional self development which includes mental health and moving through barriers for a healthy work life balance",
+    yourself: "Nicholas has a diverse background in sciences, outdoor retail, and tech. ",
     techYears: 2019,
     topics: [
         {
@@ -43,8 +43,8 @@ module.exports = {
 
     schools: [
         {
-            title: "SFSU",
-            payload: "SFSU"
+            title: "UC Davis",
+            payload: "UC Davis"
         },
         {
             title: "AppAcademy",
@@ -52,13 +52,12 @@ module.exports = {
         }
     ],
     SFSU: {
-        name: "San Francisco State University",
-        desc: `From 2008-2012 Eric went to San Francisco State University and finished with a major in Accounting, he is still currently a CPA candidate`,
+        name: "University of California, Davis",
+        desc: `Attended UC Davis from 2005 - 2010, `,
     },
     AppAcademy: {
         name: "AppAcademy",
-        desc: `From December 2019 to April 2020, Eric went to AppAcademy an intense Software Engineering bootmap located in San Francisco.`
-
+        desc: `From December 2019 to April 2020, Nicholas went to AppAcademy an intense Software Engineering bootmap located in San Francisco.`
     },
 
     techs: [
@@ -138,14 +137,16 @@ module.exports = {
     ],
     jobs: [
         {
-            title: "Trimark",
-            payload: "Trimark"
+            title: "The North Face",
+            payload: "The North Face"
         },
         {
-            title: "Logisitics",
-            payload: "logisitics"
+            title: "Sales Supervisor",
+            payload: "Sales Supervisor"
         }
     ],
+
+    //issues here as well
     projects: [
         {
             title: "EricHood",
@@ -199,6 +200,8 @@ module.exports = {
             payload: "Canvas"
         }]
     },
+
+    // issues here
     jobs: [
         {
             title: "Trimark Economy",
