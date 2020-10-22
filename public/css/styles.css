@@ -629,14 +629,10 @@ button {
 /* animation test */
 
  p{
-  /* color: rgb(47, 61, 255);  */
-  /* font-family: "Courier"; */
   font-size: .8rem;
   /* margin: 10px 0 0 10px; */
   white-space: nowrap;
   overflow: hidden;
-  /* overflow-x: hidden; */
-  /* overflow-y: visible; */
   /* width: 78em; */
   width: 200rem;
   height: fit-content;
